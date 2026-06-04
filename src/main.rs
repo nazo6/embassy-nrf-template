@@ -39,3 +39,8 @@ async fn main(spawner: Spawner) {
 async fn logger_task(driver: Driver<'static, HardwareVbusDetect>) {
     embassy_usb_logger::run!(1024, log::LevelFilter::Info, driver);
 }
+
+#[panic_handler]
+fn panic(_info: &core::panic::PanicInfo) -> ! {
+    loop {}
+}
