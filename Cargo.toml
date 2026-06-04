@@ -1,7 +1,7 @@
 cargo-features = ["profile-rustflags"]
 
 [package]
-name = "osu-keypad-test"
+name = "embassy-nrf-template"
 version = "0.1.0"
 edition = "2024"
 
